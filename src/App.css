@@ -1,0 +1,44 @@
+/* App.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3rem; /* Larger font size for emphasis */
+  text-align: center;
+  color: #330239;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: bold; /* Add some weight to the font */
+  position: relative;
+  transition: color 0.3s ease; /* Smooth color transition */
+  cursor: pointer; /* Add a pointer cursor on hover */
+  font-family: 'Roboto', sans-serif;
+  /* Apply the shine effect to the h1 element */
+  background: linear-gradient(90deg, transparent, #007bff, transparent);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: background-position 0.3s ease;
+}
+
+h1:hover {
+  background-position: left bottom; /* Move the gradient to reveal the shine to the left */
+}
+
+/* Add a subtle shadow to the container for depth */
+.container {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #f5f5f5; /* Light background color */
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
